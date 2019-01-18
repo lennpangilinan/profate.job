@@ -1,0 +1,278 @@
+/*  Page styles  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 14px/1.4 Arial, Helvetica, sans-serif;
+}
+
+.skrollr-desktop body {
+    height:100% !important;
+}
+
+#skrollr-body {
+    height:100%;
+    position:relative;
+    overflow: hidden;
+}
+
+
+/*  Styles for this example */
+
+
+.parallax-image.skrollable-between {
+    display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display:none !important;
+}
+
+.parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    width:100%;
+    overflow:hidden;
+
+    height:80vh;
+    top:-80vh;
+}
+
+
+.parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    height:100vh;
+    top:0;
+}
+
+
+.parallax-image.skrollable-between {
+    display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display:none !important;
+}
+
+
+
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+    height:80vh;
+}
+
+.skrollr .gap {
+    background:transparent !important;
+}
+
+
+/*  End of scrollr styles   */
+
+
+/*Intro*/
+
+#page-intro h1{
+    text-align: center;
+    color: #fff;
+    font: normal 60px 'doid Serif', sans-serif;
+    padding-top: 24vh;
+}
+
+/*Body Text*/
+
+
+.body-text{
+
+/*#fff*/
+
+    /*padding: 50px 0;*/
+    background-color: #f1eeed;
+    color: #25373C;
+    font-size: 18px;
+    /*text-align: center;*/
+}
+
+.body-text h2{
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+/*Features List*/
+.projects h3{
+    color: #212129;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #b68b69;
+}
+
+h1 .projects{
+       color: #ff8400;
+    
+}
+
+.projects{
+/*    background-color: #fff;*/
+    min-height: 100vh;
+    text-align: center;
+
+}
+
+.projects h2{
+    font-size: 42px;
+    margin-bottom: 80px;
+    font-weight: normal;
+}
+
+
+
+.projects div{
+    display: inline-block;
+    width: 30%;   /*30% - 3x3 40% - 2x2 50% - 1x1*/
+    margin: 5px;
+    box-shadow: 1px 1px 1px #ccc, 0 0 30px #212129 inset;
+ border-radius: 15px;
+}
+
+.projects div i{
+    font-size: 150px;
+    margin-bottom: 40px;
+    color: #50B575;
+}
+
+.projects div h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-weight: normal;
+}
+
+
+
+/*Gallery*/
+
+
+.gallery{
+    color: #221f51;
+    font: normal 24px sans-serif;
+    min-height: 300vh;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(white, #EEF6F9);
+}
+
+.scroll-pause{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    background: transparent;
+}
+
+
+.scroll-pause .row{
+    width: 200vw;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.scroll-pause .row div{
+    width: 11.5%;
+    height: 90%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0.5%;
+    border-radius: 10px;
+}
+
+.scroll-pause .row div:first-child{
+    margin-left: 0.4%;
+}
+
+.scroll-pause .row div:last-child{
+    margin-right: 0.4%;
+}
+
+/*responsive*/
+
+
+@media(min-width:375px) and @media(max-width:479px) {
+    .content-wrap2 ul{
+    font-size: 16px;}
+
+.footer div {
+    width: 39%;
+}
+
+
+}
+
+@media(min-width:480px) and (max-width:599px){
+
+
+}
+
+@media(min-width:600px) and (max-width:767px){
+
+    .body-text p{
+        width: 100%;
+        padding: 50px;
+    }
+
+}
+
+
+@media(min-width:768px) and (max-width:991px){
+        .body-text p{
+        width: 100%;
+        padding: 50px;
+    }
+        .projects div{
+        width: 30%;
+        margin-bottom: 30px;
+    }
+
+
+.footer p{
+    font-size: 18px;
+}
+
+
+}
+
+@media(min-width:992px) and (max-width:1199px){
+
+
+.footer p{
+    font-size: 20px;
+}
+
+}
+
+
+
+
+@media(min-width:1200px){
+
+ }
+
